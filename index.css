@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #22c1c3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    width: 500px;
+    background: rgba(255,255 ,255 ,.5);
+    padding: 60px;
+    border-radius: 10px;
+    position: relative;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    background: rgba(255,255 ,255 ,.5);
+    transform: rotate(-5deg);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+.header,
+.footer {
+    text-align: center;
+}
+.container a {
+    color: #35339a;
+}
+.container a:hover {
+    text-decoration: underline;
+}
+.container .header {
+    margin-bottom: 60px;
+}
+.login-form .form-items{
+    position: relative;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.container .form-items i {
+    position: absolute;
+    opacity: .4;
+    top: 15px;
+    left: 20px;
+}
+.container .form-items-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.container .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container .footer {
+    margin-top: 20px;
+    font-size: 13px;
+}
+.container input[type="email"],
+.container input[type="password"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: rgba(255,255 ,255 ,.3);
+    padding: 15px 20px;
+    padding-left: 40px;
+    border-radius: 70px;
+    transition: background .5s;
+}
+.container input:focus {
+    background: #fff;
+}
+.container button {
+    background-color: rgba(255,255 ,255 ,.7);
+    padding: 15px;
+    border-radius: 70px;
+    outline: none;
+    border: none;
+    transition: background .5s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.container button:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+.social {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255 ,255 ,.7);
+    outline: none;
+    border: none;
+    border-radius: 70px;
+    color: #000;
+}
+.social .social-btn i:hover {
+    opacity: 0.6;
+}
